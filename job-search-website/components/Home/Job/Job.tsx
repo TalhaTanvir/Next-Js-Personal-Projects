@@ -86,8 +86,8 @@ function Job() {
     <div className='py-16'>
         <SectionHeading heading='Featured Jobs' subHeading='Know your worth and find the jobs that qualify your life'/>
         <div className='w-[95%] sm:w-[80%] mt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 items-center'>
-            {jobs.map((job)=>(
-                <div key={job.id}>
+            {jobs.map((job,index)=>(
+                <div key={job.id} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay={index * 100}>
                     <JobCard job={job}/>
                 </div>
             ))}

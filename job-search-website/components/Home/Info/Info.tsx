@@ -7,11 +7,11 @@ function Info() {
     <div className='py-16'>
         <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
             {/* Image Content */}
-            <div>
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center">
                 <Image src='/images/a.png' alt='Info Image' width={1000} height={1000}/>
             </div>
             {/* Text Content */}
-            <div className='mt-6 text-gray-700 dark:text-gray-300'>
+            <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay={150} className='mt-6 text-gray-700 dark:text-gray-300'>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold leading-8 lg:leading-16'>Get applications from the world best talents.</h1>
                 <p className=''>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide.</p>
                 <div className='mt-8'>

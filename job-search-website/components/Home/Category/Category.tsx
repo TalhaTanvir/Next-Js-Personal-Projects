@@ -71,8 +71,8 @@ function Category() {
     <div>
         <SectionHeading heading='Popular Job Categories' subHeading='2020 jobs live - 293 added today.'/>
         <div className='w-[80%] mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
-            {categoryData.map((category)=>(
-                <div key={category.id}>
+            {categoryData.map((category,index)=>(
+                <div key={category.id} data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay={index * 100}>
                     <CategoryCard category={category}/>
                     
                 </div>
