@@ -1,5 +1,6 @@
 import SectionHeading from '@/components/Helper/SectionHeading'
 import React from 'react'
+import JobCard from './JobCard'
 
 
 
@@ -87,9 +88,12 @@ function Job() {
         <div className='w-[95%] sm:w-[80%] mt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 items-center'>
             {jobs.map((job)=>(
                 <div key={job.id}>
-
+                    <JobCard job={job}/>
                 </div>
             ))}
+        </div>
+        <div className='mt-10 text-center'>
+            <button className='px-10 py-4 bg-blue-700 text-white cursor-pointer rounded-lg hover:bg-blue-800 transition-all duration-200'>Load More Listing</button>
         </div>
     </div>
   )
